@@ -1,0 +1,103 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f7f9fc;
+  color: #232323;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.navbar {
+  box-shadow: 0 2px 8px rgb(0,0,0,0.05);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0262a8 0%, #36d1c4 100%);
+  color: #fff;
+  padding: 100px 0;
+}
+.text-gradient {
+  background: linear-gradient(90deg, #ff8d00, #36d1c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-lg {
+  border-radius: 30px;
+  font-weight: 600;
+  transition: box-shadow 0.3s;
+}
+.btn-lg:hover {
+  box-shadow: 0 6px 24px -6px #36d1c4;
+}
+
+/* Skills Card */
+.skill-card {
+  border-radius: 16px;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px -8px #0262a8;
+}
+.progress {
+  height: 22px;
+  border-radius: 10px;
+}
+
+/* Portfolio Card */
+.portfolio-card {
+  border-radius: 18px;
+  background: #fff;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.portfolio-card img {
+  object-fit: cover;
+  height: 180px;
+}
+.portfolio-card:hover {
+  box-shadow: 0 8px 32px -8px #ff8d00;
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Section Headings */
+h2 {
+  font-weight: 800;
+  color: #0262a8;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+.footer {
+  background: #232323;
+  color: #fff;
+  padding: 32px 0 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+  .portfolio-card img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1, h2 {
+    font-size: 2rem;
+  }
+  .btn-lg {
+    font-size: 1rem;
+  }
+}
